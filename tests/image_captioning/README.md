@@ -1,4 +1,4 @@
-###Dataset
+<H1>Dataset</H1>
 AS the dataset file is large,please download it yourself.  
 1.Flickr8k  
 Directory example  
@@ -16,10 +16,12 @@ Directory example
 ----encoded_test_images.pkl  
 ----encoded_train_images.pkl  
 --glove.6B.200d.txt  
-###Processing flow
+<H1>Processing flow</H1>
+
 ![](Processing%20flow.bmp)
 
-###Code
+<H1>Code</H1>
+
 - root/utils/ImageCaptioning.py  
 ```
 class Dataset:
@@ -59,7 +61,8 @@ class Dataset:
     ...
     
 ```
-###Model
+<H1>Model</H1>
+
 - root/tests/image_captioning/Image_Captioning_Model.py
 ```
 inputs1 = Input(shape=(2048,))
@@ -77,7 +80,8 @@ model = Model(inputs=[inputs1, inputs2], outputs=outputs)
 model.layers[2].set_weights([embedding_matrix])
 model.layers[2].trainable = False
 ```
-###Train
+<H1>Train</H1>
+
 - root/tests/image_captioning/Train.py
 ```
 #define the directory of dataset
