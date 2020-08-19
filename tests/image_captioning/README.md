@@ -175,3 +175,4 @@ plt.text(0,0,greedySearch(image))
 plt.imshow(x)
 plt.show()
 ```
+![](result.png)
